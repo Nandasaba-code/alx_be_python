@@ -1,6 +1,6 @@
 #Defining Global Conversion Factors
-fahrenheit_to_celcius_factor = (5/9)
-celcius_to_fahrenheit_factor = (9/5)
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 #Temperature Conversion Fuctions
 def convert_to_celcius(fahrenheit):
