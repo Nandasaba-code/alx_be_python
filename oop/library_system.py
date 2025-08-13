@@ -24,19 +24,20 @@ class PrintBook(Book):
     
 class Library:
     def __init__(self):
-        self.books = []  #To list stored books
+        self.books = []
 
     def add_book(self, book):
-        if isinstance(book, Book): #Only accept objects in the class Book
+        if isinstance(book, Book):  # ensures Book or subclasses only
             self.books.append(book)
         else:
             print("Only Book objects can be added to the library.")
 
     def list_books(self):
         if not self.books:
-            print("The library has no books.")
+            print("The library is empty.")
         else:
+            print("Books in the library:")
             for book in self.books:
-                print(book)
+                print(f" - {book}")
 
         
