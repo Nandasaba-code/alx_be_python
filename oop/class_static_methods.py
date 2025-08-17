@@ -4,11 +4,11 @@ class Calculator:
 
     @staticmethod
     def add(a, b):
-        """Static method: Performs addition without using class/instance data"""
+        """Static method: performs addition without needing class/instance data"""
         return a + b
 
     @classmethod
     def multiply(cls, a, b):
-        """Class method: Accesses the class attribute and performs multiplication"""
+        """Class method: performs multiplication and uses class attribute"""
         print(f"Calculation type: {cls.calculation_type}")
         return a * b
